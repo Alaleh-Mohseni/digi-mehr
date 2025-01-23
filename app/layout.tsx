@@ -27,7 +27,7 @@ export default function RootLayout({
 			<body className={`${iranYekan.className}`}>
 				<div className='flex flex-col justify-between'>
 					<Header />
-					<main className='py-10'>{children}</main>
+					<main className='flex items-center justify-center py-10'>{children}</main>
 				</div>
 			</body>
 		</html>
