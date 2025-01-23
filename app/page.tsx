@@ -1,3 +1,24 @@
+import Link from 'next/link'
+
 export default function Home() {
-	return <div>Home</div>
+	const project = ['/project/1', '/project/2', '/project/3', '/project/4', '/project/5', '/project/6']
+
+	return (
+		<div className='mb-8 flex w-full flex-col gap-[32px]'>
+			<div className='h-[400px] w-full bg-gray-300'></div>
+			<div className='flex flex-col gap-[24px] px-[24px]'>
+				<div className='flex flex-row items-center justify-between'>
+					<h1 className='text-2xl font-bold'>فرصت های نیکوکاری</h1>
+					<p className='text-[#059675]'>مشاهده همه</p>
+				</div>
+				<div className='flex flex-row items-center gap-3 overflow-hidden'>
+					{project.map((link, index) => (
+						<Link key={index} href={link}>
+							<div className='h-[308px] w-[325px] bg-gray-300'></div>
+						</Link>
+					))}
+				</div>
+			</div>
+		</div>
+	)
 }
