@@ -19,6 +19,8 @@ function Project() {
 				<div className='col-span-4 min-h-screen w-full bg-gray-300'></div>
 				<div className='col-span-1 flex min-h-screen w-full flex-col gap-[16px]'>
 					<div className='h-[300px] w-full bg-gray-300'></div>
+
+					{/* Receive link */}
 					<div className='flex h-[364px] w-full flex-col gap-[16px] rounded-[8px] p-[16px] shadow-[0_0_8px_0_rgba(57,56,56,0.1)]'>
 						<div className='flex flex-col gap-[10px]'>
 							<div className='mx-auto'>
