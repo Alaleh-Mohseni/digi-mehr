@@ -1,14 +1,14 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import Header from '@/components/Header'
-import './globals.css'
+import '../globals.css'
 
 const iranYekan = localFont({
 	src: [
-		{ path: '../public/font/IRANYekanWebLight.woff2', weight: '300', style: 'normal' },
-		{ path: '../public/font/IRANYekanWebRegular.woff2', weight: '400', style: 'normal' },
-		{ path: '../public/font/IRANYekanWebMedium.woff2', weight: '500', style: 'normal' },
-		{ path: '../public/font/IRANYekanWebBold.woff2', weight: '700', style: 'normal' },
+		{ path: '../../public/font/IRANYekanWebLight.woff2', weight: '300', style: 'normal' },
+		{ path: '../../public/font/IRANYekanWebRegular.woff2', weight: '400', style: 'normal' },
+		{ path: '../../public/font/IRANYekanWebMedium.woff2', weight: '500', style: 'normal' },
+		{ path: '../../public/font/IRANYekanWebBold.woff2', weight: '700', style: 'normal' },
 	],
 })
 

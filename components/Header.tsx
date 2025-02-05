@@ -1,17 +1,9 @@
 'use client'
 
-import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
 
 function Header() {
-	const pathname = usePathname()
-	const noHeaderPaths = ['/login']
-
-	if (noHeaderPaths.includes(pathname)) {
-		return null
-	}
-
 	return (
 		<header className='flex h-18 w-full items-center justify-between border-b-4 border-gray-700/10 px-md'>
 			<Image src='/header-logo.png' alt='digikala-mehr-logo' width={200} height={0} />
