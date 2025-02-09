@@ -8,14 +8,17 @@ const ReferalAside = () => {
 	]
 
 	return (
-		<aside className='max-h-fit w-[400px] rounded-xl border border-solid p-5'>
+		<aside className='max-h-fit max-w-[700px] rounded-xl border border-solid p-5'>
 			<h3>تاریخچه همکاری در فروش این پروژه</h3>
 
 			<ul className='divide-y-2 divide-solid'>
 				{data.map(item => (
-					<li key={item.id} className='py-5'>
-						<p>{item.value}</p>
-						<span>{item.description}</span>
+					<li key={item.id} className='relative flex items-center gap-5 py-5'>
+						<div className='relative -top-3 min-h-10 min-w-10 rounded-full bg-blue-100'></div>{' '}
+						<div>
+							<p>{item.value}</p>
+							<span>{item.description}</span>
+						</div>
 					</li>
 				))}
 			</ul>

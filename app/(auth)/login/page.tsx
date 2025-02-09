@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Login() {
 	return (
@@ -13,7 +14,12 @@ export default function Login() {
 					<p className='pb-lg text-xs'>لطفا شماره موبایل یا ایمیل خود را وارد کنید</p>
 					<input type='text' className='h-12 rounded-md border border-solid border-red-600 px-lg py-sm outline-none' />
 					<span className='pb-xl pt-sm text-xs text-red-600'>لطفا این قسمت را خالی نگذارید</span>
-					<button className='mb-sm h-12 rounded-md border border-solid border-red-600 bg-red-600 px-lg py-sm text-white outline-none'>ورود</button>
+					<Link
+						href='/create-referal'
+						className='mb-sm h-12 rounded-md border border-solid border-red-600 bg-red-600 px-lg py-sm text-center text-white outline-none'
+					>
+						ورود
+					</Link>
 					<p className='pt-sm text-xs'>ورود شما به معنای پذیرش شرایط دیجی کالا و قوانین حریم خصوصی است</p>
 				</form>
 			</div>

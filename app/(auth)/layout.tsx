@@ -1,4 +1,14 @@
+import localFont from 'next/font/local'
 import '../globals.css'
+
+const iranYekan = localFont({
+	src: [
+		{ path: '../../public/font/IRANYekanWebLight.woff2', weight: '300', style: 'normal' },
+		{ path: '../../public/font/IRANYekanWebRegular.woff2', weight: '400', style: 'normal' },
+		{ path: '../../public/font/IRANYekanWebMedium.woff2', weight: '500', style: 'normal' },
+		{ path: '../../public/font/IRANYekanWebBold.woff2', weight: '700', style: 'normal' },
+	],
+})
 
 export const metadata = {
 	title: 'Next.js',
@@ -7,8 +17,8 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
-		<html lang='fa'>
-			<body>{children}</body>
+		<html lang='fa' dir='rtl'>
+			<body className={`${iranYekan.className}`}>{children}</body>
 		</html>
 	)
 }
