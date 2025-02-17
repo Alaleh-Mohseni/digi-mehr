@@ -13,6 +13,9 @@ const config: Config = {
 				'2xl': '64px',
 				'18': '4.5rem',
 			},
+			fontFamily: {
+				iranYekan: 'var(--font-iran-yekan)',
+			},
 		},
 		plugins: [],
 	},

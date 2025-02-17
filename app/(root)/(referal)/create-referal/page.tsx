@@ -30,34 +30,41 @@ const CreateReferal = () => {
 			<div className='flex gap-5'>
 				<div className='flex grow flex-col gap-10'>
 					<p>{mockData.description}</p>
-					<ol className='flex list-inside list-decimal flex-col gap-5'>
+					<ol className='flex list-none flex-col gap-5' style={{ counterReset: 'list' }}>
 						{mockData.rules.map(rule => (
-							<li key={rule.id}>{rule.text}</li>
+							<li
+								className='before:font-iranYekan flex gap-3 before:flex before:size-7 before:items-center before:justify-center before:rounded-full before:bg-blue-200 before:font-bold before:text-white before:content-[counter(list)]'
+								style={{ counterIncrement: 'list' }}
+								key={rule.id}
+							>
+								{rule.text}
+							</li>
 						))}
 					</ol>
 
-					<label className='flex items-center gap-3'>
-						<input type='checkbox' name='check-rule' id='check-rule' checked={isChecked} onChange={handleCheckboxChange} disabled={isChecked} />
-						<p>
-							با{' '}
-							<Link href='digikala.com' className='text-blue-400 hover:text-blue-600'>
-								شرایط و قوانین همکاری در فروش
-							</Link>{' '}
-							موافقم.
-						</p>
-					</label>
-
 					{!showLinkBox ? (
-						<div>
-							<button
-								type='button'
-								disabled={!isChecked}
-								className={`rounded-md px-4 py-2 text-white ${isChecked ? 'bg-blue-600 hover:bg-blue-700' : 'cursor-not-allowed bg-gray-400'}`}
-								onClick={handleButtonClick}
-							>
-								ساخت لینک اختصاصی
-							</button>
-						</div>
+						<>
+							<label className='flex items-center gap-3'>
+								<input type='checkbox' name='check-rule' id='check-rule' checked={isChecked} onChange={handleCheckboxChange} />
+								<p>
+									با{' '}
+									<Link href='digikala.com' className='text-blue-400 hover:text-blue-600'>
+										شرایط و قوانین همکاری در فروش
+									</Link>{' '}
+									موافقم.
+								</p>
+							</label>
+							<div>
+								<button
+									type='button'
+									disabled={!isChecked}
+									className={`rounded-md px-4 py-2 text-white ${isChecked ? 'bg-blue-600 hover:bg-blue-700' : 'cursor-not-allowed bg-gray-400'}`}
+									onClick={handleButtonClick}
+								>
+									ساخت لینک اختصاصی
+								</button>
+							</div>
+						</>
 					) : (
 						<div className='mt-5 flex items-center justify-between rounded-lg border border-gray-300 bg-blue-50 px-4 py-6'>
 							<p>
