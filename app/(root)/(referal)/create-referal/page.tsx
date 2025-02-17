@@ -25,7 +25,7 @@ const CreateReferal = () => {
 	}
 
 	return (
-		<section className='container mx-auto w-full'>
+		<section className='w-full px-24'>
 			<h3 className='pb-11 text-2xl font-bold'>{mockData.heading}</h3>
 			<div className='flex gap-5'>
 				<div className='flex grow flex-col gap-10'>
