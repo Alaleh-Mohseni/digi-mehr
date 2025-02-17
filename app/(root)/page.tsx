@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Home() {
 	const project = ['/project/1', '/project/2', '/project/3', '/project/4', '/project/5', '/project/6']
@@ -14,7 +15,9 @@ export default function Home() {
 				<div className='flex flex-row items-center gap-3 overflow-hidden'>
 					{project.map((link, index) => (
 						<Link key={index} href={link}>
-							<div className='h-[308px] w-[325px] bg-gray-300'></div>
+							<div className='h-[308px] w-[325px] bg-gray-300'>
+								<Image src='/project.jpg' alt='project' width={325} height={308} />
+							</div>
 						</Link>
 					))}
 				</div>
