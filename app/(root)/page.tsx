@@ -16,7 +16,7 @@ export default function Home() {
 					{project.map((link, index) => (
 						<Link key={index} href={link}>
 							<div className='h-[308px] w-[325px] bg-gray-300'>
-								<Image src='/project.jpg' alt='project' width={325} height={308} />
+								<Image src='/project.jpg' alt='project' width={325} height={308} className='h-[308px]' />
 							</div>
 						</Link>
 					))}
