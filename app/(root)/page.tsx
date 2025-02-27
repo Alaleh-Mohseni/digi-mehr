@@ -7,12 +7,12 @@ export default function Home() {
 	return (
 		<div className='mb-8 flex w-full flex-col gap-[32px]'>
 			<div className='card-gray h-[400px] w-full'></div>
-			<div className='flex flex-col gap-[24px] px-[24px]'>
+			<div className='horizontal-pad flex flex-col gap-[24px]'>
 				<div className='flex flex-row items-center justify-between'>
 					<h1 className='text-2xl font-bold'>فرصت های نیکوکاری</h1>
 					<p className='text-secondery'>مشاهده همه</p>
 				</div>
-				<div className='flex flex-row items-center gap-3 overflow-hidden'>
+				<div className='flex flex-row items-center gap-md overflow-hidden'>
 					{project.map((link, index) => (
 						<Link key={index} href={link}>
 							<div className='h-[308px] w-[325px]'>

@@ -12,9 +12,9 @@ export default function Login() {
 					<h1 className='text-black pb-xl text-lg font-bold'>ورود | ثبت نام</h1>
 					<span className='text-blueMidnight pb-sm text-xs'>سلام!</span>
 					<p className='text-blueMidnight pb-lg text-xs'>لطفا شماره موبایل یا ایمیل خود را وارد کنید</p>
-					<input type='text' className='border-redDark round h-12 border px-md py-sm outline-none' />
+					<input type='text' className='border-redDark btn-login' />
 					<span className='text-redDark pb-xl pt-sm text-xs'>لطفا این قسمت را خالی نگذارید</span>
-					<Link href='/create-referal' className='border-redLight bg-redLight round mb-sm h-12 border px-md py-sm text-center text-white outline-none'>
+					<Link href='/create-referal' className='btn-login border-redLight bg-redLight mb-sm text-center text-white'>
 						ورود
 					</Link>
 					<p className='text-blueMidnight pt-md text-[11px]'>

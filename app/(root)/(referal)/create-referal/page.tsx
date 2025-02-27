@@ -25,15 +25,15 @@ const CreateReferal = () => {
 	}
 
 	return (
-		<section className='w-full px-24'>
+		<section className='horizontal-pad w-full'>
 			<h3 className='pb-11 text-2xl font-bold'>{mockData.heading}</h3>
-			<div className='flex gap-5'>
-				<div className='flex grow flex-col gap-10'>
-					<p>{mockData.description}</p>
-					<ol className='flex list-none flex-col gap-5' style={{ counterReset: 'list' }}>
+			<div className='flex gap-lg'>
+				<div className='flex grow flex-col gap-xl'>
+					<p className='text-sm'>{mockData.description}</p>
+					<ol className='flex list-none flex-col gap-lg' style={{ counterReset: 'list' }}>
 						{mockData.rules.map(rule => (
 							<li
-								className='before:bg-blueIce before:text-primary flex gap-3 before:flex before:size-7 before:items-center before:justify-center before:rounded-full before:font-iranYekan before:font-bold before:content-[counter(list)]'
+								className='before:bg-blueIce before:text-primary flex gap-md text-sm before:flex before:size-7 before:items-center before:justify-center before:rounded-full before:font-iranYekan before:font-bold before:content-[counter(list)]'
 								style={{ counterIncrement: 'list' }}
 								key={rule.id}
 							>
@@ -44,7 +44,7 @@ const CreateReferal = () => {
 
 					{!showLinkBox ? (
 						<>
-							<label className='flex items-center gap-3'>
+							<label className='flex items-center gap-md'>
 								<input type='checkbox' name='check-rule' id='check-rule' checked={isChecked} onChange={handleCheckboxChange} />
 								<p>
 									با{' '}
@@ -58,7 +58,7 @@ const CreateReferal = () => {
 								<button
 									type='button'
 									disabled={!isChecked}
-									className={`round px-4 py-2 text-white ${isChecked ? 'bg-primary hover:bg-blue-500' : 'cursor-not-allowed bg-gray-400'}`}
+									className={`btn text-white ${isChecked ? 'btn-primary hover:bg-blue-500' : 'bg-gray cursor-not-allowed'}`}
 									onClick={handleButtonClick}
 								>
 									ساخت لینک اختصاصی
@@ -72,7 +72,7 @@ const CreateReferal = () => {
 									https://mehr.digikala.com/project/80/farnooshjml{' '}
 								</Link>
 							</p>
-							<button className='round border-primary text-primary border px-5 py-2 text-sm'>کپی کردن</button>
+							<button className='btn border-primary text-primary border text-sm'>کپی کردن</button>
 						</div>
 					)}
 				</div>

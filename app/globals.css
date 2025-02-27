@@ -20,4 +20,16 @@
 	.round {
 		@apply rounded-md;
 	}
+	.horizontal-pad {
+		@apply px-lg;
+	}
+	.btn {
+		@apply round horizontal-pad py-sm;
+	}
+	.btn-primary {
+		@apply bg-primary;
+	}
+	.btn-login {
+		@apply round h-12 border px-md py-sm outline-none;
+	}
 }

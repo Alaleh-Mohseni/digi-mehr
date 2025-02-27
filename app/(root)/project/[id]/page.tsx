@@ -3,9 +3,9 @@ import Link from 'next/link'
 
 function Project() {
 	return (
-		<div className='flex w-full flex-col gap-[32px]'>
+		<div className='flex w-full flex-col gap-xl'>
 			<div className='card-gray h-[378px] w-full'></div>
-			<div className='flex flex-col gap-[24px] px-[24px]'>
+			<div className='horizontal-pad flex flex-col gap-lg'>
 				<h1 className='text-2xl font-bold'>توضیحات پروژه</h1>
 				<p>
 					لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان
@@ -15,13 +15,13 @@ function Project() {
 					دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
 				</p>
 			</div>
-			<div className='grid grid-cols-5 gap-[32px] px-[24px]'>
+			<div className='horizontal-pad grid grid-cols-5 gap-xl'>
 				<div className='card-gray col-span-4 min-h-screen w-full'></div>
-				<div className='col-span-1 flex min-h-screen w-full flex-col gap-[16px]'>
+				<div className='col-span-1 flex min-h-screen w-full flex-col gap-md'>
 					<div className='card-gray h-[300px] w-full'></div>
 
 					{/* Receive link */}
-					<div className='round flex h-[364px] w-full flex-col gap-[16px] p-[16px] shadow-[0_0_8px_0_rgba(57,56,56,0.1)]'>
+					<div className='round flex h-[364px] w-full flex-col gap-md p-md shadow-[0_0_8px_0_rgba(57,56,56,0.1)]'>
 						<div className='flex flex-col gap-[10px]'>
 							<div className='mx-auto'>
 								<Image src='/svg/online-connection.svg' alt='online-connection' width={180} height={0} />
@@ -31,7 +31,7 @@ function Project() {
 								با اشتراک‌گذاری لینک اختصاصی خود، دیگران را به نیکوکاری در این پروژه دعوت کن و از مهر هدیه بگیر.
 							</p>
 						</div>
-						<div className='bg-primary round flex h-[33px] w-full items-center justify-center text-xs text-white'>
+						<div className='btn btn-primary flex w-full items-center justify-center text-sm text-white'>
 							<Link href='/login'>
 								<button>دریافت لینک اختصاصی</button>
 							</Link>
