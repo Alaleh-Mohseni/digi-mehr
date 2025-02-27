@@ -4,7 +4,7 @@ import Link from 'next/link'
 function Project() {
 	return (
 		<div className='flex w-full flex-col gap-[32px]'>
-			<div className='h-[378px] w-full bg-gray-300'></div>
+			<div className='card-gray h-[378px] w-full'></div>
 			<div className='flex flex-col gap-[24px] px-[24px]'>
 				<h1 className='text-2xl font-bold'>توضیحات پروژه</h1>
 				<p>
@@ -16,22 +16,22 @@ function Project() {
 				</p>
 			</div>
 			<div className='grid grid-cols-5 gap-[32px] px-[24px]'>
-				<div className='col-span-4 min-h-screen w-full bg-gray-300'></div>
+				<div className='card-gray col-span-4 min-h-screen w-full'></div>
 				<div className='col-span-1 flex min-h-screen w-full flex-col gap-[16px]'>
-					<div className='h-[300px] w-full bg-gray-300'></div>
+					<div className='card-gray h-[300px] w-full'></div>
 
 					{/* Receive link */}
-					<div className='flex h-[364px] w-full flex-col gap-[16px] rounded-[8px] p-[16px] shadow-[0_0_8px_0_rgba(57,56,56,0.1)]'>
+					<div className='round flex h-[364px] w-full flex-col gap-[16px] p-[16px] shadow-[0_0_8px_0_rgba(57,56,56,0.1)]'>
 						<div className='flex flex-col gap-[10px]'>
 							<div className='mx-auto'>
 								<Image src='/svg/online-connection.svg' alt='online-connection' width={180} height={0} />
 							</div>
-							<p className='text-sm font-bold text-[#0B90FB]'>دیگران را به مهربانی دعوت کن!</p>
-							<p className='text-xs font-medium leading-[21px] text-[#828488]'>
+							<p className='text-primary text-sm font-bold'>دیگران را به مهربانی دعوت کن!</p>
+							<p className='text-gray text-xs font-medium leading-[21px]'>
 								با اشتراک‌گذاری لینک اختصاصی خود، دیگران را به نیکوکاری در این پروژه دعوت کن و از مهر هدیه بگیر.
 							</p>
 						</div>
-						<div className='flex h-[33px] w-full items-center justify-center rounded-[8px] bg-[#0B90FB] text-xs text-white'>
+						<div className='bg-primary round flex h-[33px] w-full items-center justify-center text-xs text-white'>
 							<Link href='/login'>
 								<button>دریافت لینک اختصاصی</button>
 							</Link>

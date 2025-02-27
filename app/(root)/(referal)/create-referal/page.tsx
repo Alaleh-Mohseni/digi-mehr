@@ -33,7 +33,7 @@ const CreateReferal = () => {
 					<ol className='flex list-none flex-col gap-5' style={{ counterReset: 'list' }}>
 						{mockData.rules.map(rule => (
 							<li
-								className='before:font-iranYekan flex gap-3 before:flex before:size-7 before:items-center before:justify-center before:rounded-full before:bg-blue-200 before:font-bold before:text-white before:content-[counter(list)]'
+								className='before:bg-blueIce before:text-primary flex gap-3 before:flex before:size-7 before:items-center before:justify-center before:rounded-full before:font-iranYekan before:font-bold before:content-[counter(list)]'
 								style={{ counterIncrement: 'list' }}
 								key={rule.id}
 							>
@@ -48,7 +48,7 @@ const CreateReferal = () => {
 								<input type='checkbox' name='check-rule' id='check-rule' checked={isChecked} onChange={handleCheckboxChange} />
 								<p>
 									با{' '}
-									<Link href='digikala.com' className='text-blue-400 hover:text-blue-600'>
+									<Link href='digikala.com' className='text-primary hover:text-blue-500'>
 										شرایط و قوانین همکاری در فروش
 									</Link>{' '}
 									موافقم.
@@ -58,7 +58,7 @@ const CreateReferal = () => {
 								<button
 									type='button'
 									disabled={!isChecked}
-									className={`rounded-md px-4 py-2 text-white ${isChecked ? 'bg-blue-600 hover:bg-blue-700' : 'cursor-not-allowed bg-gray-400'}`}
+									className={`round px-4 py-2 text-white ${isChecked ? 'bg-primary hover:bg-blue-500' : 'cursor-not-allowed bg-gray-400'}`}
 									onClick={handleButtonClick}
 								>
 									ساخت لینک اختصاصی
@@ -66,13 +66,13 @@ const CreateReferal = () => {
 							</div>
 						</>
 					) : (
-						<div className='mt-5 flex items-center justify-between rounded-lg border border-gray-300 bg-blue-50 px-4 py-6'>
+						<div className='round bg-blueLight mt-5 flex items-center justify-between border px-4 py-6'>
 							<p>
-								<Link href='https://example.com' className='text-blue-600 underline'>
+								<Link href='https://example.com' className='text-primary underline'>
 									https://mehr.digikala.com/project/80/farnooshjml{' '}
 								</Link>
 							</p>
-							<button className='rounded-lg border border-blue-600 px-5 py-2 text-sm text-blue-700'>کپی کردن</button>
+							<button className='round border-primary text-primary border px-5 py-2 text-sm'>کپی کردن</button>
 						</div>
 					)}
 				</div>

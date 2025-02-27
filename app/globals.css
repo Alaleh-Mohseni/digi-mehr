@@ -9,6 +9,15 @@
 	h4,
 	h5,
 	h6 {
-		@apply text-black-200;
+		@apply text-blackLight;
+	}
+	.border {
+		@apply border-grayIce;
+	}
+	.card-gray {
+		@apply bg-gray;
+	}
+	.round {
+		@apply rounded-md;
 	}
 }
