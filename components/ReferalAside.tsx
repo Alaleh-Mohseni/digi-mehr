@@ -8,16 +8,16 @@ const ReferalAside = () => {
 	]
 
 	return (
-		<aside className='round max-h-fit max-w-[700px] border border-solid p-lg'>
-			<h3>تاریخچه همکاری در فروش این پروژه</h3>
+		<aside className='max-h-fit max-w-[315px] rounded-[12px] border border-solid px-lg pt-[28px]'>
+			<h3 className='text-md font-bold'>تاریخچه همکاری در فروش این پروژه</h3>
 			<ul className='divide-y-2 divide-solid'>
 				{data.map(item => (
-					<li key={item.id} className='border-grayIce relative flex items-center gap-lg py-lg'>
-						<div className='bg-blueLight relative -top-3 min-h-10 min-w-10 rounded-full'></div>{' '}
-						<div className='flex flex-col gap-md'>
-							<p className='font-bold'>{item.value}</p>
-							<span className='text-gray text-sm'>{item.description}</span>
+					<li key={item.id} className='relative flex flex-col border-grayIce py-lg'>
+						<div className='flex gap-[12px]'>
+							<div className='relative -top-3 min-h-10 min-w-10 rounded-full bg-blueLight'></div>
+							<p className='text-[18px] font-extrabold'>{item.value}</p>
 						</div>
+						<p className='ps-[47px] text-[14px] font-medium text-[#81858A]'>{item.description}</p>
 					</li>
 				))}
 			</ul>
