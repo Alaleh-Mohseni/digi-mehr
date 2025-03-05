@@ -8,7 +8,7 @@ const ReferalAside = () => {
 	]
 
 	return (
-		<aside className='max-h-fit max-w-[315px] rounded-[12px] border border-solid px-lg pt-[28px]'>
+		<aside className='max-h-fit min-w-[315px] rounded-[12px] border border-solid px-lg pt-[28px]'>
 			<h3 className='text-md font-bold'>تاریخچه همکاری در فروش این پروژه</h3>
 			<ul className='divide-y-2 divide-solid'>
 				{data.map(item => (
