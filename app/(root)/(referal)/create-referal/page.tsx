@@ -14,7 +14,14 @@ export const mockData = {
 		{ id: 3, text: 'قوانین همکاری را مطالعه کرده و با شرایط موافقت کنید.' },
 	],
 }
-
+const data = {
+	heading: ' تاریخچه همکاری در فروش این پروژه',
+	roules: [
+		{ id: 1, value: '۵,۰۰۴,۰۰۰ تومان', description: 'خریداری شده' },
+		{ id: 2, value: '۱۲۳ کالا', description: 'هدیه شده است' },
+		{ id: 3, value: '۴۲ نفر', description: 'دیگران را به این پروژه دعوت کرده‌اند' },
+	],
+}
 const CreateReferal = () => {
 	const [isChecked, setIsChecked] = useState(false)
 	const [showLinkBox, setShowLinkBox] = useState(false)
@@ -28,8 +35,8 @@ const CreateReferal = () => {
 	return (
 		<section className='flex w-full flex-col gap-[36px] px-[36px] py-xl'>
 			<h3 className='text-[18px] font-bold'>{mockData.heading}</h3>
-			<div className='flex gap-18'>
-				<div className='flex flex-col gap-lg'>
+			<div className='flex gap-2xl'>
+				<div className='flex w-[85%] flex-col gap-lg'>
 					<p className='text-justify text-[14px] font-medium leading-[28px]'>{mockData.description}</p>
 					<ol className='flex list-none flex-col gap-md' style={{ counterReset: 'list' }}>
 						{mockData.rules.map(rule => (
@@ -77,7 +84,7 @@ const CreateReferal = () => {
 						</div>
 					)}
 				</div>
-				<ReferalAside />
+				<ReferalAside data={data} />
 			</div>
 		</section>
 	)
