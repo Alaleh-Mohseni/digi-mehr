@@ -26,7 +26,7 @@ function Project() {
 							<div className='mx-auto'>
 								<Image src='/svg/online-connection.svg' alt='online-connection' width={180} height={0} />
 							</div>
-							<p className='text-primary text-sm font-bold'>دیگران را به مهربانی دعوت کن!</p>
+							<p className='text-ref-blue text-sm font-bold'>دیگران را به مهربانی دعوت کن!</p>
 							<p className='text-gray text-xs font-medium leading-[21px]'>
 								با اشتراک‌گذاری لینک اختصاصی خود، دیگران را به نیکوکاری در این پروژه دعوت کن و از مهر هدیه بگیر.
 							</p>

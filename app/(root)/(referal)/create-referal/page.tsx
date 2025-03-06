@@ -34,20 +34,20 @@ const CreateReferal = () => {
 	}
 
 	return (
-		<section className='flex w-full flex-col gap-[36px] px-[36px] py-xl'>
+		<section className='py-xl flex w-full flex-col gap-[36px] px-[36px]'>
 			<h3 className='heading'>{mockData.heading}</h3>
-			<div className='flex gap-2xl'>
-				<div className='flex w-[85%] flex-col gap-lg'>
+			<div className='gap-2xl flex'>
+				<div className='gap-lg flex w-[85%] flex-col'>
 					<p className='text14Medium text-justify'>{mockData.description}</p>
 					<ListNumber data={mockData.rules} />
 
 					{!showLinkBox ? (
 						<div className='flex flex-col gap-[20px]'>
-							<label className='flex items-center gap-md'>
+							<label className='gap-md flex items-center'>
 								<input type='checkbox' name='check-rule' id='check-rule' checked={isChecked} onChange={handleCheckboxChange} />
 								<p className='text-[14px] font-medium'>
 									با{' '}
-									<Link href='digikala.com' className='text-primary hover:text-blue-500'>
+									<Link href='digikala.com' className='text-ref-blue hover:text-blue-500'>
 										شرایط و قوانین همکاری در فروش
 									</Link>{' '}
 									موافقم.
@@ -57,7 +57,7 @@ const CreateReferal = () => {
 								<button
 									type='button'
 									disabled={!isChecked}
-									className={`btn text-[12px] text-white ${isChecked ? 'btn-primary hover:bg-blue-500' : 'cursor-not-allowed bg-gray'}`}
+									className={`btn text-[12px] text-white ${isChecked ? 'bg-ref-blue hover:bg-blue-500' : 'bg-gray cursor-not-allowed'}`}
 									onClick={handleButtonClick}
 								>
 									ساخت لینک اختصاصی
@@ -65,13 +65,13 @@ const CreateReferal = () => {
 							</div>
 						</div>
 					) : (
-						<div className='round mt-5 flex items-center justify-between border bg-blueLight px-4 py-6'>
+						<div className='bg-ref-lighter mt-5 flex items-center justify-between border px-4 py-6'>
 							<p>
-								<Link href='https://example.com' className='text-primary underline'>
+								<Link href='https://example.com' className='text-ref-blue underline'>
 									https://mehr.digikala.com/project/80/farnooshjml{' '}
 								</Link>
 							</p>
-							<button className='btn border border-primary text-sm text-primary'>کپی کردن</button>
+							<button className='text-ref-blue border-ref-blue text-sm'>کپی کردن</button>
 						</div>
 					)}
 				</div>
