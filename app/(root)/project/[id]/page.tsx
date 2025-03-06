@@ -1,11 +1,12 @@
 import UniqueLink from '@/components/UniqueLink'
+import styles from '@/app/ui/project.module.css'
 
 function Project() {
 	return (
 		<div className='flex w-full flex-col gap-xl'>
-			<div className='h-[378px] w-full bg-gray-300'></div>
+			<div className={styles.gray_container}></div>
 			<div className='flex flex-col gap-lg px-lg'>
-				<h1 className='text-2xl font-bold'>توضیحات پروژه</h1>
+				<h1>توضیحات پروژه</h1>
 				<p>
 					لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان
 					که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
@@ -15,14 +16,13 @@ function Project() {
 				</p>
 			</div>
 			<div className='grid grid-cols-5 gap-xl px-lg'>
-				<div className='col-span-4 h-[1000px] w-full bg-gray-300'></div>
-				<div className='sticky top-[80px] col-span-1 flex w-full flex-col gap-md'>
-					<div className='h-[300px] w-full bg-gray-300'></div>
-
+				<div className={`${styles.gray_container_big} col-span-4`}></div>
+				<div className='col-span-1 flex w-full flex-col gap-md'>
+					<div className={styles.gray_container_small}></div>
 					<UniqueLink />
 				</div>
 			</div>
-			<div className='h-[378px] w-full bg-gray-300'></div>
+			<div className={styles.gray_container}></div>
 		</div>
 	)
 }

@@ -1,9 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import styles from '@/app/ui/uniqueLink.module.css'
 
 function UniqueLink() {
 	return (
-		<div className='flex h-[364px] w-full flex-col gap-md rounded-lg p-md shadow-[0_0_8px_0_rgba(57,56,56,0.1)]'>
+		<div className={`${styles.container} flex w-full flex-col gap-md rounded-lg p-md`}>
 			<div className='flex flex-col gap-base'>
 				<div className='mx-auto'>
 					<Image src='/svg/online-connection.svg' alt='online-connection' width={180} height={0} loading='lazy' />

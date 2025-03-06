@@ -17,6 +17,18 @@ const config: Config = {
 			fontFamily: {
 				iranYekan: 'var(--font-iran-yekan)',
 			},
+			colors: {
+				primary: '#0b90fb',
+				blueAqua: '#008eb2',
+				blueLight: '#e7f7fb',
+				blueMidnight: '#3f4064',
+				blueIce: '#f7fbfe',
+				secondery: '#059675',
+				greenLight: '#08af89',
+				greenIce: '#f6faf9',
+				grayDark: '#585a5f',
+				grayIce: '#dfe0e2',
+			},
 		},
 		plugins: [],
 	},
