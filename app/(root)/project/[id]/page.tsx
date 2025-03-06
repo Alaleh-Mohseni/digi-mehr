@@ -21,7 +21,7 @@ function Project() {
 					<div className='h-[300px] w-full bg-gray-300'></div>
 
 					{/* Receive link */}
-					<div className='flex h-[364px] w-full flex-col gap-md rounded-sm p-md shadow-[0_0_8px_0_rgba(57,56,56,0.1)]'>
+					<div className='flex h-[364px] w-full flex-col gap-md rounded-lg p-md shadow-[0_0_8px_0_rgba(57,56,56,0.1)]'>
 						<div className='flex flex-col gap-base'>
 							<div className='mx-auto'>
 								<Image src='/svg/online-connection.svg' alt='online-connection' width={180} height={0} loading='lazy' />
@@ -31,7 +31,7 @@ function Project() {
 								با اشتراک‌گذاری لینک اختصاصی خود، دیگران را به نیکوکاری در این پروژه دعوت کن و از مهر هدیه بگیر.
 							</p>
 						</div>
-						<div className='flex h-[33px] w-full items-center justify-center rounded-sm bg-blue-500 text-xs text-white'>
+						<div className='flex w-full items-center justify-center rounded-lg bg-blue-500 py-sm text-xs text-white'>
 							<Link href='/login'>
 								<button>دریافت لینک اختصاصی</button>
 							</Link>
