@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import ReferalAside from '@/components/ReferalAside'
 import Link from 'next/link'
+import ListNumber from '@/components/ListNumber'
 
 export const mockData = {
 	heading: 'همکاری در فروش به تحصیل کودکان کار افرک',
@@ -34,21 +35,11 @@ const CreateReferal = () => {
 
 	return (
 		<section className='flex w-full flex-col gap-[36px] px-[36px] py-xl'>
-			<h3 className='text-[18px] font-bold'>{mockData.heading}</h3>
+			<h3 className='heading'>{mockData.heading}</h3>
 			<div className='flex gap-2xl'>
 				<div className='flex w-[85%] flex-col gap-lg'>
-					<p className='text-justify text-[14px] font-medium leading-[28px]'>{mockData.description}</p>
-					<ol className='flex list-none flex-col gap-md' style={{ counterReset: 'list' }}>
-						{mockData.rules.map(rule => (
-							<li
-								className='flex gap-sm text-[14px] font-medium before:flex before:size-8 before:items-center before:justify-center before:rounded-full before:bg-blueIce before:font-iranYekan before:font-bold before:text-primary before:content-[counter(list)]'
-								style={{ counterIncrement: 'list' }}
-								key={rule.id}
-							>
-								{rule.text}
-							</li>
-						))}
-					</ol>
+					<p className='text14Medium text-justify'>{mockData.description}</p>
+					<ListNumber data={mockData.rules} />
 
 					{!showLinkBox ? (
 						<div className='flex flex-col gap-[20px]'>
