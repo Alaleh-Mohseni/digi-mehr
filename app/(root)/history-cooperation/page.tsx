@@ -65,15 +65,15 @@ export default function History() {
 									<span className='text-center'>{item.revenue}</span>
 									<span className='text-center'>{item.commission}</span>
 									<span className='text-center'>{item.startDate}</span>
-									<span className='text-center text-primary'>{item.link}</span>
+									<span className='text-ref-blue text-center'>{item.link}</span>
 								</li>
 							))}
 						</ul>
 					</div>
 					<div className='flex justify-center rounded-[12px] border bg-blueLight px-[24px] py-[28px]'>
 						<div className='grid w-full grid-cols-2 items-center'>
-							<h3 className='text-[14px] font-bold text-primary'>دریافت هدیه از دیجی کالا</h3>
-							<p className='text-left text-primary'>icon</p>
+							<h3 className='text-ref-blue text-[14px] font-bold'>دریافت هدیه از دیجی کالا</h3>
+							<p className='text-ref-blue text-left'>icon</p>
 						</div>
 					</div>
 				</div>
