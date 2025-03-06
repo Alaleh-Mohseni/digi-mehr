@@ -5,9 +5,9 @@ export default function Home() {
 	const project = ['/project/1', '/project/2', '/project/3', '/project/4', '/project/5', '/project/6']
 
 	return (
-		<div className='mb-8 flex w-full flex-col gap-[32px]'>
+		<div className='mb-8 flex w-full flex-col gap-xl'>
 			<div className='card-gray h-[400px] w-full'></div>
-			<div className='horizontal-pad flex flex-col gap-[24px]'>
+			<div className='horizontal-pad flex flex-col gap-lg'>
 				<div className='flex flex-row items-center justify-between'>
 					<h1 className='text-2xl font-bold'>فرصت های نیکوکاری</h1>
 					<p className='text-secondery'>مشاهده همه</p>
