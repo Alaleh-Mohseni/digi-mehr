@@ -17,18 +17,6 @@ const config: Config = {
 			fontFamily: {
 				iranYekan: 'var(--font-iran-yekan)',
 			},
-			colors: {
-				green: {
-					50: '#059675',
-				},
-				gray: {
-					500: '#828488',
-					900: '#080a38',
-				},
-				blue: {
-					500: '#0b90fb',
-				},
-			},
 		},
 		plugins: [],
 	},
