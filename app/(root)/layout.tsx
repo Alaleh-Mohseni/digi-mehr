@@ -29,7 +29,7 @@ export default function RootLayout({
 			<body className={`${iranYekan.variable} font-iranYekan`}>
 				<div className='flex flex-col justify-between'>
 					<Header />
-					<main className='mt-xl w-full'>{children}</main>
+					<main className='w-full'>{children}</main>
 				</div>
 			</body>
 		</html>

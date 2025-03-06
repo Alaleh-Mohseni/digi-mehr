@@ -5,17 +5,17 @@ export default function Home() {
 	const project = ['/project/1', '/project/2', '/project/3', '/project/4', '/project/5', '/project/6']
 
 	return (
-		<div className='mb-8 flex w-full flex-col gap-[32px]'>
-			<div className='h-[400px] w-full bg-gray-300'></div>
-			<div className='flex flex-col gap-[24px] px-[24px]'>
+		<div className='mb-8 flex w-full flex-col gap-xl'>
+			<div className='card-gray h-[400px] w-full'></div>
+			<div className='horizontal-pad flex flex-col gap-lg'>
 				<div className='flex flex-row items-center justify-between'>
 					<h1 className='text-2xl font-bold'>فرصت های نیکوکاری</h1>
-					<p className='text-[#059675]'>مشاهده همه</p>
+					<p className='text-secondery'>مشاهده همه</p>
 				</div>
-				<div className='flex flex-row items-center gap-3 overflow-hidden'>
+				<div className='flex flex-row items-center gap-md overflow-hidden'>
 					{project.map((link, index) => (
 						<Link key={index} href={link}>
-							<div className='h-[308px] w-[325px] bg-gray-300'>
+							<div className='h-[308px] w-[325px]'>
 								<Image src='/project.jpg' alt='project' width={325} height={308} className='h-[308px]' />
 							</div>
 						</Link>
