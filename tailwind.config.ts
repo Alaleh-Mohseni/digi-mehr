@@ -7,6 +7,7 @@ const config: Config = {
 			spacing: {
 				xs: '4px',
 				sm: '8px',
+				base: '10px',
 				md: '16px',
 				lg: '24px',
 				xl: '32px',
@@ -15,6 +16,18 @@ const config: Config = {
 			},
 			fontFamily: {
 				iranYekan: 'var(--font-iran-yekan)',
+			},
+			colors: {
+				green: {
+					50: '#059675',
+				},
+				gray: {
+					500: '#828488',
+					900: '#080a38',
+				},
+				blue: {
+					500: '#0b90fb',
+				},
 			},
 		},
 		plugins: [],
