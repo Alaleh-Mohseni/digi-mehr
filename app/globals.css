@@ -9,31 +9,31 @@
 	h4,
 	h5,
 	h6 {
-		@apply text-blackLight;
+		@apply text-black;
 	}
 	p {
-		@apply;
+		@apply text-[#313131];
 	}
 	.border {
-		@apply border-grayIce;
+		@apply border-gray-300;
 	}
 	.card-gray {
-		@apply bg-gray;
+		@apply bg-gray-100;
 	}
 	.round {
 		@apply rounded-md;
 	}
 	.horizontal-pad {
-		@apply px-lg;
+		@apply px-4;
 	}
 	.btn {
-		@apply round horizontal-pad py-sm;
+		@apply rounded-md px-4 py-2;
 	}
 	.btn-primary {
-		@apply bg-primary;
+		@apply bg-blue-500 text-white;
 	}
 	.btn-login {
-		@apply round h-12 border px-md py-sm outline-none;
+		@apply h-12 rounded-md border px-4 py-2 outline-none;
 	}
 }
 

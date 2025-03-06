@@ -25,7 +25,6 @@ const config: Config = {
 				secondery: '#059675',
 				greenLight: '#08af89',
 				greenIce: '#f6faf9',
-				gray: '#828488',
 				grayDark: '#585a5f',
 				grayIce: '#dfe0e2',
 				blackLight: '#515151',
