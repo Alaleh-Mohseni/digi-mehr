@@ -1,0 +1,18 @@
+.gray_container,
+.gray_container_small,
+.gray_container_big {
+	width: 100%;
+	background-color: lightgrey;
+}
+
+.gray_container {
+	height: 378px;
+}
+
+.gray_container_small {
+	height: 300px;
+}
+
+.gray_container_big {
+	min-height: 100vh;
+}

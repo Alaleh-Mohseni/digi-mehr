@@ -3,27 +3,47 @@
 @tailwind utilities;
 
 @layer base {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply text-gray-900;
+	}
+
+	h1 {
+		@apply text-2xl font-bold;
+	}
+
 	p {
 		@apply text-[#313131];
 	}
+
 	.border {
 		@apply border-gray-300;
 	}
+
 	.card-gray {
 		@apply bg-gray-100;
 	}
+
 	.round {
 		@apply rounded-md;
 	}
+
 	.horizontal-pad {
 		@apply px-4;
 	}
+
 	.btn {
 		@apply rounded-md px-4 py-2;
 	}
+
 	.btn-primary {
 		@apply bg-blue-500 text-white;
 	}
+
 	.btn-login {
 		@apply h-12 rounded-md border px-4 py-2 outline-none;
 	}
