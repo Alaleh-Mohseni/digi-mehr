@@ -18,7 +18,10 @@ const config: Config = {
 				iranYekan: 'var(--font-iran-yekan)',
 			},
 			colors: {
-				primary: '#0b90fb',
+				'ref-blue': '#0b90fb',
+				'ref-lighter': '#DEEFFD40',
+				'meher-lightest': '#E7F7FB',
+
 				blueAqua: '#008eb2',
 				blueLight: '#e7f7fb',
 				blueMidnight: '#3f4064',
@@ -31,7 +34,7 @@ const config: Config = {
 				grayMd: '#828488',
 			},
 		},
-		plugins: [],
 	},
+	plugins: [],
 }
 export default config

@@ -35,18 +35,6 @@
 	.horizontal-pad {
 		@apply px-4;
 	}
-
-	.btn {
-		@apply rounded-md px-4 py-2;
-	}
-
-	.btn-primary {
-		@apply bg-blue-500 text-white;
-	}
-
-	.btn-login {
-		@apply h-12 rounded-md border px-4 py-2 outline-none;
-	}
 }
 
 @layer components {

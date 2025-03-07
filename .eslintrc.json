@@ -3,7 +3,13 @@
 	"plugins": ["tailwindcss"],
 	"settings": {
 		"tailwindcss": {
-			"config": "tailwind.config.js"
+			"config": "tailwind.config.ts"
 		}
-	}
+	},
+	"overrides": [
+		{
+			"files": ["*.ts", "*.tsx", "*.js"],
+			"parser": "@typescript-eslint/parser"
+		}
+	]
 }
