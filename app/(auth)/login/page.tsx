@@ -5,7 +5,7 @@ export default function Login() {
 	return (
 		<div className='relative h-screen'>
 			<div className='absolute left-1/2 top-1/2 w-full max-w-sm -translate-x-1/2 -translate-y-1/2'>
-				<form className='flex flex-col rounded-lg border border-[#dfe0e2] p-8'>
+				<form className='border-gray-ice flex flex-col rounded-lg border p-8'>
 					<div className='flex items-center justify-center pb-8'>
 						<Image src='/svg/login-logo.svg' alt='digikala-mehr-logo' width={100} height={0} />
 					</div>

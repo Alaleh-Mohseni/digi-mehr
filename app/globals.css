@@ -19,22 +19,6 @@
 	p {
 		@apply text-[#313131];
 	}
-
-	.border {
-		@apply border-gray-300;
-	}
-
-	.card-gray {
-		@apply bg-gray-100;
-	}
-
-	.round {
-		@apply rounded-md;
-	}
-
-	.horizontal-pad {
-		@apply px-4;
-	}
 }
 
 @layer components {

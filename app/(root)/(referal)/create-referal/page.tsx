@@ -34,16 +34,16 @@ const CreateReferal = () => {
 	}
 
 	return (
-		<section className='py-xl flex w-full flex-col gap-[36px] px-[36px]'>
+		<section className='flex w-full flex-col gap-[36px] px-[36px] py-xl'>
 			<h3 className='heading'>{mockData.heading}</h3>
-			<div className='gap-2xl flex'>
-				<div className='gap-lg flex w-[85%] flex-col'>
+			<div className='flex gap-2xl'>
+				<div className='flex w-[85%] flex-col gap-lg'>
 					<p className='text14Medium text-justify'>{mockData.description}</p>
 					<ListNumber data={mockData.rules} />
 
 					{!showLinkBox ? (
 						<div className='flex flex-col gap-[20px]'>
-							<label className='gap-md flex items-center'>
+							<label className='flex items-center gap-md'>
 								<input type='checkbox' name='check-rule' id='check-rule' checked={isChecked} onChange={handleCheckboxChange} />
 								<p className='text-[14px] font-medium'>
 									با{' '}
@@ -65,13 +65,13 @@ const CreateReferal = () => {
 							</div>
 						</div>
 					) : (
-						<div className='bg-ref-lighter mt-5 flex items-center justify-between border px-4 py-6'>
+						<div className='border-gray-ice mt-5 flex items-center justify-between rounded-[12px] border bg-ref-lighter px-4 py-6'>
 							<p>
 								<Link href='https://example.com' className='text-ref-blue underline'>
 									https://mehr.digikala.com/project/80/farnooshjml{' '}
 								</Link>
 							</p>
-							<button className='text-ref-blue border-ref-blue text-sm'>کپی کردن</button>
+							<button className='border border-ref-blue text-sm text-ref-blue'>کپی کردن</button>
 						</div>
 					)}
 				</div>
