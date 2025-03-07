@@ -13,7 +13,7 @@ type ButtonProps = {
 }
 
 function Button({ children, className, type = 'default', href, disabled, variant, onClick }: ButtonProps) {
-	const baseClasses = 'px-6 py-2 rounded-lg text-sm font-medium transition duration-200'
+	const baseClasses = 'px-5 py-2 rounded-lg text-sm font-medium transition duration-200'
 
 	const selectedVariant = variant || (type === 'primary' ? 'solid' : 'outlined')
 
@@ -26,15 +26,15 @@ function Button({ children, className, type = 'default', href, disabled, variant
 
 	const classes = cn(baseClasses, disabled ? disabledClasses : variantClasses[selectedVariant], className)
 
-	if (type === 'primary' && href) {
+	if (type === 'link' && href) {
 		return (
-			<Link href={href} className={classes}>
+			<Link href={href} className='text-ref-blue hover:border-ref-blue/70 hover:text-ref-blue/70'>
 				{children}
 			</Link>
 		)
-	} else if (type === 'link' && href) {
+	} else if (href) {
 		return (
-			<Link href={href} className='text-ref-blue hover:border-ref-blue/70 hover:text-ref-blue/70'>
+			<Link href={href} className={classes}>
 				{children}
 			</Link>
 		)
