@@ -20,7 +20,7 @@ const Header = () => {
 					<div className='flex items-center gap-md'>
 						<Image src='/svg/user.svg' alt='user' width={20} height={0} />
 						<span className='text-gray-ice'>|</span>
-						<Image src='/svg/shopping-cart.svg' alt='shopping-cart' width={20} height={0} />
+						<Image src='/svg/shopping-basket.svg' alt='shopping-cart' width={24} height={24} />
 					</div>
 				) : (
 					<Button href='/login' className='flex gap-2 border-gray-300 font-bold text-gray-700 hover:border-gray-300 hover:text-gray-700'>

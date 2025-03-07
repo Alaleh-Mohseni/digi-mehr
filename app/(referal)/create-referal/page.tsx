@@ -18,9 +18,9 @@ export const mockData = {
 const data = {
 	heading: ' تاریخچه همکاری در فروش این پروژه',
 	roules: [
-		{ id: 1, value: '۵,۰۰۴,۰۰۰ تومان', description: 'خریداری شده' },
-		{ id: 2, value: '۱۲۳ کالا', description: 'هدیه شده است' },
-		{ id: 3, value: '۴۲ نفر', description: 'دیگران را به این پروژه دعوت کرده‌اند' },
+		{ id: 1, value: '۵,۰۰۴,۰۰۰ تومان', description: 'خریداری شده', icon: '/svg/money-bill.svg' },
+		{ id: 2, value: '۱۲۳ کالا', description: 'هدیه شده است', icon: '/svg/shopping-bag.svg' },
+		{ id: 3, value: '۴۲ نفر', description: 'دیگران را به این پروژه دعوت کرده‌اند', icon: '/svg/building.svg' },
 	],
 }
 const CreateReferal = () => {
@@ -53,7 +53,7 @@ const CreateReferal = () => {
 								/>
 								<p className='text14Medium'>
 									با{' '}
-									<Button type='link' href='https://example.com'>
+									<Button type='link' href='/terms'>
 										شرایط و قوانین همکاری در فروش
 									</Button>{' '}
 									موافقم.

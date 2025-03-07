@@ -53,7 +53,7 @@ export default function Home() {
 					<h1>فرصت‌های نیکوکاری</h1>
 					<Link href='/projects' className='flex flex-row items-center gap-3 text-greenLight'>
 						مشاهده همه
-						<Image src='/svg/angle-left 1.svg' alt='angle-left' width={10} height={12} loading='lazy' />
+						<Image src='/svg/angle-left.svg' alt='angle-left' width={10} height={12} loading='lazy' />
 					</Link>
 				</div>
 

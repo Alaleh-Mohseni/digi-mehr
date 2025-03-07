@@ -20,11 +20,11 @@ const config: Config = {
 			colors: {
 				'ref-blue': '#0B90FB',
 				'ref-lighter': '#DEEFFD40',
-				'meher-lightest': '#E7F7FB',
+				'mehr-lightest': '#E7F7FB',
 				'blue-ice': '#F7FBFE',
 				'gray-ice': '#DFE0E2',
 
-				secondery: '#059675',
+				secondary: '#059675',
 				greenLight: '#08af89',
 				greenIce: '#f6faf9',
 				grayDark: '#585a5f',
