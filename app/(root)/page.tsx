@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import styles from '@/app/ui/home.module.css'
 
-interface Project {
+type Project = {
 	link: string
 	title: string
 	description: string
@@ -63,8 +63,8 @@ export default function Home() {
 							<div className={`${styles.charity_content} border-1-gray-200 h-full overflow-hidden rounded-xl shadow-lg`}>
 								<Image src={project.image} alt={project.title} width={325} height={180} className='object-cover' loading='lazy' />
 								<div className='flex flex-col gap-md px-3 py-2'>
-									<h3 className='text-sm font-bold'>{project.title}</h3>
-									<p className='text-base text-gray-900'>{project.description}</p>
+									<h4 className='text-xs font-bold'>{project.title}</h4>
+									<p className='text-sm text-gray-900'>{project.description}</p>
 								</div>
 							</div>
 						</Link>
