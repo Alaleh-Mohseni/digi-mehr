@@ -17,7 +17,7 @@
 	}
 
 	p {
-		@apply text-[#313131];
+		@apply text-black;
 	}
 
 	.border {

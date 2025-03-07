@@ -2,8 +2,8 @@
 
 import { useState } from 'react'
 import ReferalAside from '@/components/ReferalAside'
-import Link from 'next/link'
 import ListNumber from '@/components/ListNumber'
+import Button from '@/components/Button'
 
 export const mockData = {
 	heading: 'همکاری در فروش به تحصیل کودکان کار افرک',
@@ -34,44 +34,43 @@ const CreateReferal = () => {
 	}
 
 	return (
-		<section className='py-xl flex w-full flex-col gap-[36px] px-[36px]'>
+		<section className='flex w-full flex-col gap-[36px] px-[36px] py-xl'>
 			<h3 className='heading'>{mockData.heading}</h3>
-			<div className='gap-2xl flex'>
-				<div className='gap-lg flex w-[85%] flex-col'>
+			<div className='flex gap-2xl'>
+				<div className='flex w-[85%] flex-col gap-lg'>
 					<p className='text14Medium text-justify'>{mockData.description}</p>
 					<ListNumber data={mockData.rules} />
 
 					{!showLinkBox ? (
 						<div className='flex flex-col gap-[20px]'>
-							<label className='gap-md flex items-center'>
-								<input type='checkbox' name='check-rule' id='check-rule' checked={isChecked} onChange={handleCheckboxChange} />
-								<p className='text-[14px] font-medium'>
+							<label className='flex items-center gap-sm'>
+								<input
+									type='checkbox'
+									id='check-rule'
+									checked={isChecked}
+									onChange={handleCheckboxChange}
+									className='size-4 rounded-full border-2 border-blue-500 checked:border-transparent checked:bg-blue-500 focus:ring-2 focus:ring-blue-300'
+								/>
+								<p className='text14Medium'>
 									با{' '}
-									<Link href='digikala.com' className='text-ref-blue hover:text-blue-500'>
+									<Button type='link' href='https://example.com'>
 										شرایط و قوانین همکاری در فروش
-									</Link>{' '}
+									</Button>{' '}
 									موافقم.
 								</p>
 							</label>
 							<div>
-								<button
-									type='button'
-									disabled={!isChecked}
-									className={`btn text-[12px] text-white ${isChecked ? 'bg-ref-blue hover:bg-blue-500' : 'bg-gray cursor-not-allowed'}`}
-									onClick={handleButtonClick}
-								>
+								<Button type='primary' disabled={!isChecked} onClick={handleButtonClick}>
 									ساخت لینک اختصاصی
-								</button>
+								</Button>
 							</div>
 						</div>
 					) : (
-						<div className='bg-ref-lighter mt-5 flex items-center justify-between border px-4 py-6'>
-							<p>
-								<Link href='https://example.com' className='text-ref-blue underline'>
-									https://mehr.digikala.com/project/80/farnooshjml{' '}
-								</Link>
-							</p>
-							<button className='text-ref-blue border-ref-blue text-sm'>کپی کردن</button>
+						<div className='mt-5 flex items-center justify-between rounded-xl border bg-ref-lighter px-8 py-7'>
+							<Button type='link' href='/history-cooperation'>
+								https://mehr.digikala.com/project/80/farnooshjml{' '}
+							</Button>
+							<Button>کپی کردن</Button>
 						</div>
 					)}
 				</div>
