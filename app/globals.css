@@ -16,8 +16,16 @@
 		@apply text-2xl font-bold;
 	}
 
+	h2 {
+		@apply text-lg font-semibold text-grayHd;
+	}
+
+	h3 {
+		@apply text-sm font-bold text-ref-blue;
+	}
+
 	p {
-		@apply text-black;
+		@apply text-sm font-medium text-[#313131];
 	}
 
 	.border {
