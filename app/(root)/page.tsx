@@ -51,8 +51,9 @@ export default function Home() {
 			<section className={`${styles.section} flex flex-col gap-md px-lg`}>
 				<div className='flex flex-row items-center justify-between'>
 					<h1>فرصت‌های نیکوکاری</h1>
-					<Link href='/projects' className='text-greenLight'>
+					<Link href='/projects' className='flex flex-row items-center gap-3 text-greenLight'>
 						مشاهده همه
+						<Image src='/svg/angle-left 1.svg' alt='angle-left' width={10} height={12} loading='lazy' />
 					</Link>
 				</div>
 
