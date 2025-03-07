@@ -1,8 +1,11 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '@/app/ui/uniqueLink.module.css'
 
 function UniqueLink() {
+	const login = localStorage.getItem('login')
 	return (
 		<div className={`${styles.container} flex w-full flex-col gap-md rounded-lg p-md`}>
 			<div className='flex flex-col gap-base'>
@@ -15,7 +18,7 @@ function UniqueLink() {
 				</p>
 			</div>
 			<div className='flex w-full items-center justify-center rounded-lg bg-ref-blue py-sm text-xs text-white'>
-				<Link href='/login'>
+				<Link href={login ? '/create-referal' : '/login'}>
 					<button>دریافت لینک اختصاصی</button>
 				</Link>
 			</div>

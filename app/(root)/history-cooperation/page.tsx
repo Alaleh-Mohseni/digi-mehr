@@ -77,7 +77,7 @@ export default function History() {
 						<div className='grid w-full grid-cols-2 items-center'>
 							<h3 className='text-[14px] font-bold text-ref-blue'>دریافت هدیه از دیجی کالا</h3>
 							<p className='flex justify-end'>
-								<Image src='/svg/angle-left.svg' alt='angle-left' className='' width={15} height={0} />
+								<Image src='/svg/angle-left.svg' alt='angle-left' className='text-ref-blue' width={15} height={0} />
 							</p>
 						</div>
 					</div>
