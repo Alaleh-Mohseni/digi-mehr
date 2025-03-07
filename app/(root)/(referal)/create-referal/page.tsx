@@ -45,9 +45,9 @@ const CreateReferal = () => {
 						<div className='flex flex-col gap-[20px]'>
 							<label className='flex items-center gap-md'>
 								<input type='checkbox' name='check-rule' id='check-rule' checked={isChecked} onChange={handleCheckboxChange} />
-								<p className='text-[14px] font-medium'>
+								<p className='text-sm font-medium'>
 									با{' '}
-									<Link href='digikala.com' className='text-ref-blue hover:text-blue-500'>
+									<Link href='/terms' className='text-ref-blue hover:text-blue-500'>
 										شرایط و قوانین همکاری در فروش
 									</Link>{' '}
 									موافقم.
@@ -57,7 +57,7 @@ const CreateReferal = () => {
 								<button
 									type='button'
 									disabled={!isChecked}
-									className={`btn text-[12px] text-white ${isChecked ? 'bg-ref-blue hover:bg-blue-500' : 'bg-gray cursor-not-allowed'}`}
+									className={`btn text-xs text-white ${isChecked ? 'bg-ref-blue hover:bg-blue-500' : 'bg-gray cursor-not-allowed'}`}
 									onClick={handleButtonClick}
 								>
 									ساخت لینک اختصاصی
@@ -65,7 +65,7 @@ const CreateReferal = () => {
 							</div>
 						</div>
 					) : (
-						<div className='border-gray-ice mt-5 flex items-center justify-between rounded-[12px] border bg-ref-lighter px-4 py-6'>
+						<div className='border-gray-ice mt-5 flex items-center justify-between rounded-[12px] bg-ref-lighter px-4 py-6'>
 							<p>
 								<Link href='https://example.com' className='text-ref-blue underline'>
 									https://mehr.digikala.com/project/80/farnooshjml{' '}
