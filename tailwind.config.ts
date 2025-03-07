@@ -20,13 +20,13 @@ const config: Config = {
 			colors: {
 				'ref-blue': '#0b90fb',
 				'ref-lighter': '#DEEFFD40',
-				'meher-lightest': '#E7F7FB',
+				'mehr-lightest': '#E7F7FB',
 
 				blueAqua: '#008eb2',
 				blueLight: '#e7f7fb',
 				blueMidnight: '#3f4064',
 				blueIce: '#f7fbfe',
-				secondery: '#059675',
+				secondary: '#059675',
 				greenLight: '#08af89',
 				greenIce: '#f6faf9',
 				grayDark: '#585a5f',
