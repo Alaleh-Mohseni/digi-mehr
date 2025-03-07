@@ -28,6 +28,7 @@ const config: Config = {
 				greenIce: '#f6faf9',
 				grayDark: '#585a5f',
 				grayIce: '#dfe0e2',
+				grayMd: '#828488',
 			},
 		},
 		plugins: [],
