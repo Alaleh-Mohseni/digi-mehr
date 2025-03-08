@@ -3,9 +3,11 @@
 import Image from 'next/image'
 import Button from './Button'
 import { useEffect, useState } from 'react'
+import Panel from '@/components/Panel'
 
 const Header = () => {
 	const [isLogin, setIsLogin] = useState(false)
+	const [dropDown, setDropDown] = useState(false)
 	useEffect(() => {
 		const login = localStorage.getItem('login')
 		setIsLogin(!!login)
@@ -17,8 +19,12 @@ const Header = () => {
 				<Image src='/header-logo.png' alt='digikala-mehr-logo' width={150} height={0} />
 
 				{isLogin ? (
-					<div className='flex items-center gap-md'>
-						<Image src='/svg/user.svg' alt='user' width={20} height={0} />
+					<div className='relative flex items-center gap-md'>
+						<div className='flex items-center gap-sm'>
+							<Image src='/svg/user.svg' onClick={() => setDropDown(state => !state)} alt='user' width={20} height={0} />
+							<span>?</span>
+						</div>
+						{dropDown ? <Panel /> : null}
 						<span className='text-gray-ice'>|</span>
 						<Image src='/svg/shopping-basket.svg' alt='shopping-cart' width={24} height={24} />
 					</div>
