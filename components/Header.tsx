@@ -20,8 +20,11 @@ const Header = () => {
 
 				{isLogin ? (
 					<div className='relative flex items-center gap-md'>
-						<div className='flex items-center gap-sm'>
-							<Image src='/svg/user.svg' onClick={() => setDropDown(state => !state)} alt='user' width={20} height={0} />
+						<div
+							className={`flex cursor-pointer items-center gap-sm rounded-md px-sm py-xs transition-all ${dropDown ? 'bg-red-100' : null}`}
+							onClick={() => setDropDown(state => !state)}
+						>
+							<Image src='/svg/user.svg' alt='user' width={20} height={0} />
 							<span>?</span>
 						</div>
 						{dropDown ? <Panel /> : null}
