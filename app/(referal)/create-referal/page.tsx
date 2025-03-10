@@ -15,14 +15,13 @@ export const mockData = {
 		{ id: 3, text: 'قوانین همکاری را مطالعه کرده و با شرایط موافقت کنید.' },
 	],
 }
-const data = {
-	heading: ' تاریخچه همکاری در فروش این پروژه',
-	roules: [
-		{ id: 1, value: '۵,۰۰۴,۰۰۰ تومان', description: 'خریداری شده', icon: '/svg/money-bill.svg' },
-		{ id: 2, value: '۱۲۳ کالا', description: 'هدیه شده است', icon: '/svg/shopping-bag.svg' },
-		{ id: 3, value: '۴۲ نفر', description: 'دیگران را به این پروژه دعوت کرده‌اند', icon: '/svg/building.svg' },
-	],
-}
+const heading = ' تاریخچه همکاری در فروش این پروژه'
+const roles = [
+	{ id: 1, value: '۵,۰۰۴,۰۰۰ تومان', description: 'خریداری شده', icon: '/svg/money-bill.svg' },
+	{ id: 2, value: '۱۲۳ کالا', description: 'هدیه شده است', icon: '/svg/shopping-bag.svg' },
+	{ id: 3, value: '۴۲ نفر', description: 'دیگران را به این پروژه دعوت کرده‌اند', icon: '/svg/building.svg' },
+]
+
 const CreateReferal = () => {
 	const [isChecked, setIsChecked] = useState(false)
 	const [showLinkBox, setShowLinkBox] = useState(false)
@@ -74,7 +73,7 @@ const CreateReferal = () => {
 						</div>
 					)}
 				</div>
-				<ReferalAside data={data} />
+				<ReferalAside heading={heading} roles={roles} />
 			</div>
 		</section>
 	)
