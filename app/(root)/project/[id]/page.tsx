@@ -4,7 +4,7 @@ import styles from '@/app/ui/project.module.css'
 function Project() {
 	return (
 		<div className='flex w-full flex-col gap-xl'>
-			<div className={styles.gray_container}></div>
+			<div className='h-[378px] w-full bg-gray-200'></div>
 			<div className='flex flex-col gap-lg px-lg'>
 				<h1>توضیحات پروژه</h1>
 				<p className='leading-7'>
@@ -16,13 +16,13 @@ function Project() {
 				</p>
 			</div>
 			<div className='grid grid-cols-5 gap-xl px-lg'>
-				<div className={`${styles.gray_container_big} col-span-4`}></div>
+				<div className='col-span-4 min-h-screen w-full bg-gray-200'></div>
 				<div className='col-span-1 flex w-full flex-col gap-md'>
-					<div className={styles.gray_container_small}></div>
+					<div className='h-[300px] w-full bg-gray-200'></div>
 					<UniqueLink />
 				</div>
 			</div>
-			<div className={styles.gray_container}></div>
+			<div className='h-[378px] w-full bg-gray-200'></div>
 		</div>
 	)
 }

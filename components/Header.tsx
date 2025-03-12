@@ -24,8 +24,8 @@ const Header = () => {
 							className={`flex cursor-pointer items-center gap-sm rounded-md px-sm py-xs transition-all ${dropDown ? 'bg-red-100' : null}`}
 							onClick={() => setDropDown(state => !state)}
 						>
-							<Image src='/svg/user.svg' alt='user' width={20} height={0} />
-							<span>?</span>
+							<Image src='/svg/user-alt.svg' alt='user' width={25} height={0} />
+							<Image src='/svg/down-arrow.svg' alt='user' width={10} height={0} />
 						</div>
 						{dropDown ? <Panel /> : null}
 						<span className='text-gray-ice'>|</span>

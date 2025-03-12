@@ -1,5 +1,6 @@
 import ReferalAside from '@/components/ReferalAside'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function History() {
 	const dataHistory = [
@@ -72,14 +73,14 @@ export default function History() {
 							))}
 						</ul>
 					</div>
-					<div className='flex justify-center rounded-[12px] border border-gray-ice bg-mehr-lightest px-[24px] py-[28px]'>
+					<Link href='/appreciate' className='flex justify-center rounded-[12px] border border-gray-ice bg-mehr-lightest px-[24px] py-[28px]'>
 						<div className='grid w-full grid-cols-2 items-center'>
 							<h3 className='text-sm font-bold text-ref-blue'>دریافت هدیه از دیجی کالا</h3>
 							<p className='flex justify-end'>
 								<Image src='/svg/chevron-left.svg' alt='angle-left' width={24} height={24} />
 							</p>
 						</div>
-					</div>
+					</Link>
 				</div>
 				<ReferalAside heading={heading} roles={roles} />
 			</div>
