@@ -1,8 +1,8 @@
 'use client'
 
 import Image from 'next/image'
-import Link from 'next/link'
 import { useParams } from 'next/navigation'
+import Button from '@/components/Button' // مسیر مناسب را وارد کنید
 
 const UniqueLink = () => {
 	const params = useParams()
@@ -16,11 +16,9 @@ const UniqueLink = () => {
 				<h3>دیگران را به مهربانی دعوت کن!</h3>
 				<p className='text-xs leading-[21px] text-grayMd'>با اشتراک‌گذاری لینک اختصاصی خود، دیگران را به نیکوکاری در این پروژه دعوت کن و از مهر هدیه بگیر.</p>
 			</div>
-			<div className='flex w-full items-center justify-center rounded-lg bg-ref-blue py-sm text-xs text-white'>
-				<Link href={`/project/${params.id}/create-referral`}>
-					<button>دریافت لینک اختصاصی</button>
-				</Link>
-			</div>
+			<Button type='primary' href={`/project/${params.id}/create-referral`} className='flex w-full items-center justify-center rounded-lg py-sm text-xs'>
+				دریافت لینک اختصاصی
+			</Button>
 		</div>
 	)
 }
