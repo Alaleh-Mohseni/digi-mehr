@@ -17,7 +17,7 @@ function UniqueLink() {
 				<p className='text-xs leading-[21px] text-grayMd'>با اشتراک‌گذاری لینک اختصاصی خود، دیگران را به نیکوکاری در این پروژه دعوت کن و از مهر هدیه بگیر.</p>
 			</div>
 			<div className='flex w-full items-center justify-center rounded-lg bg-ref-blue py-sm text-xs text-white'>
-				<Link href={`/project/${params.id}/create-referal`}>
+				<Link href={`/project/${params.id}/create-referral`}>
 					<button>دریافت لینک اختصاصی</button>
 				</Link>
 			</div>

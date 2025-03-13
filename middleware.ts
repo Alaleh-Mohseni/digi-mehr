@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from 'next/server'
 export function middleware(request: NextRequest) {
 	const { cookies } = request
 	const login = cookies.get('login')
-	
+
 	if (!login) {
 		const url = new URL('/login', request.url)
 		url.searchParams.set('redirectTo', request.nextUrl.pathname)
@@ -14,5 +14,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-	matcher: ['/user/:path*', '/project/:id/create-referal'],
+	matcher: ['/user/:path*', '/project/:id/create-referral'],
 }

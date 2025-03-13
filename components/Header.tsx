@@ -19,6 +19,7 @@ const Header = () => {
 	useEffect(() => {
 		const login = getCookie('login')
 		setIsLogin(!!login)
+		console.log(login)
 	}, [])
 
 	return (

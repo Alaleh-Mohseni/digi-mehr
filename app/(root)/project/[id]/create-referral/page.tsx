@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import ReferalAside from '@/components/ReferalAside'
+import ReferralAside from '@/components/ReferralAside'
 import ListNumber from '@/components/ListNumber'
 import Button from '@/components/Button'
 import Card from '@/components/Card'
@@ -24,7 +24,7 @@ const roles = [
 	{ id: 3, value: '۴۲ نفر', description: 'دیگران را به این پروژه دعوت کرده‌اند', icon: '/svg/building.svg' },
 ]
 
-const CreateReferal = () => {
+const CreateReferral = () => {
 	const [isChecked, setIsChecked] = useState(false)
 	const [showLinkBox, setShowLinkBox] = useState(false)
 	const [uniqueLink, setUniqueLink] = useState('')
@@ -86,10 +86,10 @@ const CreateReferal = () => {
 						</Card>
 					)}
 				</div>
-				<ReferalAside heading={heading} roles={roles} />
+				<ReferralAside heading={heading} roles={roles} />
 			</div>
 		</section>
 	)
 }
 
-export default CreateReferal
+export default CreateReferral

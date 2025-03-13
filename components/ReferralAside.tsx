@@ -11,7 +11,7 @@ type TableProps = {
 	}[]
 }
 
-const ReferalAside = ({ heading, roles }: TableProps) => {
+const ReferralAside = ({ heading, roles }: TableProps) => {
 	return (
 		<aside className='max-h-fit min-w-[315px] max-w-[315px]'>
 			<Card>
@@ -34,4 +34,4 @@ const ReferalAside = ({ heading, roles }: TableProps) => {
 	)
 }
 
-export default ReferalAside
+export default ReferralAside

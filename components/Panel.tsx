@@ -9,7 +9,7 @@ const Panel = () => {
 	]
 	return (
 		<div className='shadow-[0px_8px_0px_rgba(57, 56, 56, 0.1)] absolute left-14 top-8 z-0 w-[206px] cursor-pointer rounded-md border bg-white px-md pt-md transition-all'>
-			<div className='flex items-center gap-sm pb-md' onClick={() => setDropDown(state => !state)}>
+			<div className='flex items-center gap-sm pb-md'>
 				<Image src='/svg/user.svg' alt='user' className='rounded-full border' width={20} height={0} />
 				<span className='text-sm font-extrabold'>فرنوش جمالی</span>
 			</div>

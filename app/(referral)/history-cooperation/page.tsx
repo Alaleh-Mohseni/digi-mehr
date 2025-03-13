@@ -1,4 +1,4 @@
-import ReferalAside from '@/components/ReferalAside'
+import ReferralAside from '@/components/ReferralAside'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -82,7 +82,7 @@ export default function History() {
 						</div>
 					</Link>
 				</div>
-				<ReferalAside heading={heading} roles={roles} />
+				<ReferralAside heading={heading} roles={roles} />
 			</div>
 		</section>
 	)
