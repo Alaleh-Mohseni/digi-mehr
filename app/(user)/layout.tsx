@@ -2,8 +2,6 @@ import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import Header from '@/components/Header'
 import '../globals.css'
-import Card from '@/components/Card'
-import Button from '@/components/Button'
 
 const iranYekan = localFont({
 	src: [
@@ -31,34 +29,7 @@ export default function RootLayout({
 			<body className={`${iranYekan.variable} font-iranYekan`}>
 				<div className='flex flex-col justify-between'>
 					<Header />
-					<main className='flex w-full gap-4'>
-						<aside className='flex flex-col gap-4'>
-							<Card className='divide-y-2'>
-								<div>
-									<h2>فرنوش جمالی</h2>
-									<p>09385709936</p>
-								</div>
-								<Button type='link' href='digikala.com'>
-									رفتن به دیجی کالا
-								</Button>
-							</Card>
-							<Card>
-								<h2>تاریخ چه مهرباین شما خالی است</h2>
-								<p>تاکنون به هیچ پروژه ای یاری نرساندید.</p>
-							</Card>
-							<Card>
-								<h2>دیگران را به مهر دعوت کن!</h2>
-								<p className='text-center'>هنوز کسی دعوت شما را نپذیرفته</p>
-								<Button>مشاهده جزئیات</Button>
-							</Card>
-							<Card>
-								<h2>دیگران را به مهر دعوت کن!</h2>
-								<p>هنوز کسی دعوت شما را نپذیرفته</p>
-								<Button>مشاهده جزئیات</Button>
-							</Card>
-						</aside>
-						{children}
-					</main>
+					<main className='flex w-full gap-4'>{children}</main>
 				</div>
 			</body>
 		</html>

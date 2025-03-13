@@ -76,9 +76,9 @@ const History = () => {
 					<Link href='/appreciate' className='flex justify-center rounded-[12px] border border-gray-ice bg-mehr-lightest px-[24px] py-[28px]'>
 						<div className='grid w-full grid-cols-2 items-center'>
 							<h3 className='text-sm font-bold text-ref-blue'>دریافت هدیه از دیجی کالا</h3>
-							<p className='flex justify-end'>
+							<Link className='flex justify-end' href={`/user/appreciate`}>
 								<Image src='/svg/chevron-left.svg' alt='angle-left' width={24} height={24} />
-							</p>
+							</Link>
 						</div>
 					</Link>
 				</div>

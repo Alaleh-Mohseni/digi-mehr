@@ -79,7 +79,7 @@ const CreateReferral = () => {
 						</div>
 					) : (
 						<Card className='flex items-center justify-between bg-ref-lighter'>
-							<Button type='link' href='/history-cooperation'>
+							<Button type='link' href='/user/history-cooperation'>
 								{uniqueLink}
 							</Button>
 							<Button onClick={handleCopy}>کپی کردن</Button>

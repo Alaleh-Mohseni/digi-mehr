@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Panel = () => {
 	const data = [
-		{ id: 1, title: 'تاریخچه سفارشات مهر', src: '/svg/clipboard-list.svg', link: '/history-cooperation' },
+		{ id: 1, title: 'تاریخچه سفارشات مهر', src: '/svg/clipboard-list.svg', link: '/' },
 		{ id: 2, title: 'همکاری در فروش', src: '/svg/handshake.svg', link: '/' },
 		{ id: 3, title: 'خروج از حساب کاربری', src: '/svg/sign-out.svg', link: '/' },
 	]
