@@ -9,7 +9,7 @@ const Login = () => {
 	const [valueInput, setValueInput] = useState<string>('')
 	const searchParams = useSearchParams()
 	const router = useRouter()
-	const redirectTo = searchParams.get('redirectTo') || '/' // مقدار پیش‌فرض
+	const redirectTo = searchParams.get('redirectTo') || '/'
 
 	const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
 		setValueInput(e.target.value)
