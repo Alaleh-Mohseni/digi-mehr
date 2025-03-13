@@ -1,13 +1,13 @@
 import { cn } from '@/lib/utils/utils'
 import { ReactNode } from 'react'
 
-interface CardProps {
+type CardProps = {
 	children: ReactNode
 	className?: string
 }
 
-const Card: React.FC<CardProps> = ({ children, className }) => {
-	return <div className={cn('rounded-xl border px-8 py-7', className)}>{children}</div>
+const Card = ({ children, className }: CardProps) => {
+	return <div className={cn('w-full rounded-xl border px-8 py-7', className)}>{children}</div>
 }
 
 export default Card

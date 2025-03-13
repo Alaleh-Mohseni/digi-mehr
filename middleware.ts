@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 
-export function middleware(request: NextRequest) {
+export const middleware = (request: NextRequest) => {
 	const { cookies } = request
 	const login = cookies.get('login')
 

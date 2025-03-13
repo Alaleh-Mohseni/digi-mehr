@@ -12,7 +12,7 @@ type ButtonProps = {
 	onClick?: () => void
 }
 
-function Button({ children, className, type = 'default', href, disabled, variant, onClick }: ButtonProps) {
+const Button = ({ children, className, type = 'default', href, disabled, variant, onClick }: ButtonProps) => {
 	const baseClasses = 'px-5 py-2 rounded-lg text-sm font-medium transition duration-200'
 
 	const selectedVariant = variant || (type === 'primary' ? 'solid' : 'outlined')

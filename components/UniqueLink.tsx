@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useParams } from 'next/navigation'
 
-function UniqueLink() {
+const UniqueLink = () => {
 	const params = useParams()
 
 	return (
