@@ -18,7 +18,7 @@ export const mockData = {
 	],
 }
 const heading = ' تاریخچه همکاری در فروش این پروژه'
-const roles = [
+const referralStats = [
 	{ id: 1, value: '۵,۰۰۴,۰۰۰ تومان', description: 'خریداری شده', icon: '/svg/money-bill.svg' },
 	{ id: 2, value: '۱۲۳ کالا', description: 'هدیه شده است', icon: '/svg/shopping-bag.svg' },
 	{ id: 3, value: '۴۲ نفر', description: 'دیگران را به این پروژه دعوت کرده‌اند', icon: '/svg/building.svg' },
@@ -86,7 +86,7 @@ const CreateReferral = () => {
 						</Card>
 					)}
 				</div>
-				<ReferralAside heading={heading} roles={roles} />
+				<ReferralAside heading={heading} referralStats={referralStats} />
 			</div>
 		</section>
 	)

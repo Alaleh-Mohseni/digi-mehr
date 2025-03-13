@@ -36,7 +36,7 @@ const History = () => {
 		},
 	]
 	const heading = ' همکاری با مهر شما در یک نگاه'
-	const roles = [
+	const referralStats = [
 		{ id: 1, value: '۵,۰۰۴,۰۰۰ تومان', description: 'از دعوت شما مهرورزیده شده است', icon: '/svg/money-bill.svg' },
 		{ id: 2, value: '۱۲۳ کالا', description: 'به واسطه شما برای کارهای نیک خریداری شده است', icon: '/svg/shopping-bag.svg' },
 		{ id: 3, value: '۴۲ نفر', description: 'دعوت شما به مهر را پذیرفته اند', icon: '/svg/building.svg' },
@@ -82,7 +82,7 @@ const History = () => {
 						</div>
 					</Link>
 				</div>
-				<ReferralAside heading={heading} roles={roles} />
+				<ReferralAside heading={heading} referralStats={referralStats} />
 			</div>
 		</section>
 	)
