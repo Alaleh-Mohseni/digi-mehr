@@ -28,7 +28,7 @@ const Button = ({ children, className, type = 'default', href, disabled, variant
 
 	if (type === 'link' && href) {
 		return (
-			<Link href={href} className='text-ref-blue hover:border-ref-blue/70 hover:text-ref-blue/70'>
+			<Link href={href} className={cn('text-ref-blue hover:border-ref-blue/70 hover:text-ref-blue/70', className)}>
 				{children}
 			</Link>
 		)

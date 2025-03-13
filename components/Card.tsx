@@ -7,7 +7,7 @@ type CardProps = {
 }
 
 const Card = ({ children, className }: CardProps) => {
-	return <div className={cn('w-full rounded-xl border px-8 py-7', className)}>{children}</div>
+	return <div className={cn('w-full space-y-4 rounded-xl border px-8 py-7', className)}>{children}</div>
 }
 
 export default Card
