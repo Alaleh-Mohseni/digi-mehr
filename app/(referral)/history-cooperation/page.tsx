@@ -2,7 +2,7 @@ import ReferralAside from '@/components/ReferralAside'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function History() {
+const History = () => {
 	const dataHistory = [
 		{
 			id: 1,
@@ -87,3 +87,4 @@ export default function History() {
 		</section>
 	)
 }
+export default History

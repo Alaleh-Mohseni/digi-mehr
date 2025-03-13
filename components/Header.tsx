@@ -2,25 +2,12 @@
 
 import Image from 'next/image'
 import Button from './Button'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import Panel from '@/components/Panel'
-
-const getCookie = (name: string) => {
-	if (typeof document === 'undefined') return null // جلوگیری از ارور در SSR
-	const cookies = document.cookie.split('; ')
-	const cookie = cookies.find(row => row.startsWith(`${name}=`))
-	return cookie ? cookie.split('=')[1] : null
-}
 
 const Header = () => {
 	const [isLogin, setIsLogin] = useState(false)
 	const [dropDown, setDropDown] = useState(false)
-
-	useEffect(() => {
-		const login = getCookie('login')
-		setIsLogin(!!login)
-		console.log(login)
-	}, [])
 
 	return (
 		<>

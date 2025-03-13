@@ -1,6 +1,6 @@
 import UniqueLink from '@/components/UniqueLink'
 
-function Project() {
+const Project = () => {
 	return (
 		<div className='flex w-full flex-col gap-xl'>
 			<div className='h-[378px] w-full bg-gray-200'></div>

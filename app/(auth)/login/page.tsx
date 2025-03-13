@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { handleLogin } from '@/lib/utils/actions/user.actions'
 import { useSearchParams, useRouter } from 'next/navigation'
 
-export default function Login() {
+const Login = () => {
 	const [valueInput, setValueInput] = useState<string>('')
 	const searchParams = useSearchParams()
 	const router = useRouter()
@@ -48,3 +48,4 @@ export default function Login() {
 		</div>
 	)
 }
+export default Login

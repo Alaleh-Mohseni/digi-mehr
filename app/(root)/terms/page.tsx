@@ -1,4 +1,4 @@
-function Terms() {
+const Terms = () => {
 	return (
 		<div className='flex flex-col gap-3 p-xl'>
 			<h2>شرایط و قوانین همکاری در فروش در دیجیکالا مهر</h2>

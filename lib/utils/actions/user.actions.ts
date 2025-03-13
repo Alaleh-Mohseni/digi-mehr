@@ -6,7 +6,7 @@ export const handleLogin = async (valueInput: string) => {
 	if (valueInput !== '') {
 		const cookieStore = cookies()
 
-		await cookieStore.set({
+		cookieStore.set({
 			name: 'login',
 			value: 'true',
 			httpOnly: true,

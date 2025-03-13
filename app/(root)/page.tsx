@@ -41,7 +41,7 @@ const projects: Project[] = [
 	},
 ]
 
-export default function Home() {
+const Home = () => {
 	return (
 		<div className='mb-sm flex w-full flex-col gap-md'>
 			<div className='h-[400px] w-full bg-gray-200' />
@@ -78,3 +78,4 @@ export default function Home() {
 		</div>
 	)
 }
+export default Home
