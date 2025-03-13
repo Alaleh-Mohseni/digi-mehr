@@ -5,31 +5,38 @@ import Button from './Button'
 import { useEffect, useState } from 'react'
 import Panel from '@/components/Panel'
 
+const getCookie = (name: string) => {
+	if (typeof document === 'undefined') return null // جلوگیری از ارور در SSR
+	const cookies = document.cookie.split('; ')
+	const cookie = cookies.find(row => row.startsWith(`${name}=`))
+	return cookie ? cookie.split('=')[1] : null
+}
+
 const Header = () => {
 	const [isLogin, setIsLogin] = useState(false)
 	const [dropDown, setDropDown] = useState(false)
+
 	useEffect(() => {
-		const login = localStorage.getItem('login')
+		const login = getCookie('login')
 		setIsLogin(!!login)
 	}, [])
 
 	return (
 		<>
 			<header className='header'>
-				<Image src='/header-logo.png' alt='digikala-mehr-logo' width={150} height={0} />
-
+				<Image src='/header-logo.png' alt='logo' width={150} height={0} />
 				{isLogin ? (
 					<div className='relative flex items-center gap-md'>
 						<div
-							className={`flex cursor-pointer items-center gap-sm rounded-md px-sm py-xs transition-all ${dropDown ? 'bg-red-100' : null}`}
+							className={`flex cursor-pointer items-center gap-sm rounded-md px-sm py-xs transition-all ${dropDown ? 'bg-red-100' : ''}`}
 							onClick={() => setDropDown(state => !state)}
 						>
 							<Image src='/svg/user-alt.svg' alt='user' width={25} height={0} />
-							<Image src='/svg/down-arrow.svg' alt='user' width={10} height={0} />
+							<Image src='/svg/down-arrow.svg' alt='arrow' width={10} height={0} />
 						</div>
-						{dropDown ? <Panel /> : null}
+						{dropDown && <Panel />}
 						<span className='text-gray-ice'>|</span>
-						<Image src='/svg/shopping-basket.svg' alt='shopping-cart' width={24} height={24} />
+						<Image src='/svg/shopping-basket.svg' alt='cart' width={24} height={24} />
 					</div>
 				) : (
 					<Button href='/login' className='flex gap-2 border-gray-300 font-bold text-gray-700 hover:border-gray-300 hover:text-gray-700'>
