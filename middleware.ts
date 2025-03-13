@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 
 export const middleware = (request: NextRequest) => {
 	const { cookies } = request
-	const login = cookies.get('login')
+	const login = cookies.get('login')?.value || null
 
 	if (!login) {
 		const url = new URL('/login', request.url)
@@ -10,7 +10,10 @@ export const middleware = (request: NextRequest) => {
 		return NextResponse.redirect(url)
 	}
 
-	return NextResponse.next()
+	const response = NextResponse.next()
+	response.headers.set('login', login)
+
+	return response
 }
 
 export const config = {

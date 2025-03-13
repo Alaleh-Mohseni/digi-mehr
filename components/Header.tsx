@@ -2,12 +2,24 @@
 
 import Image from 'next/image'
 import Button from './Button'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Panel from '@/components/Panel'
 
 const Header = () => {
 	const [isLogin, setIsLogin] = useState(false)
 	const [dropDown, setDropDown] = useState(false)
+
+	useEffect(() => {
+		const fetchLoginStatus = async () => {
+			const response = await fetch(window.location.href, { method: 'GET' })
+			const login = response.headers.get('login')
+			if (login) {
+				setIsLogin(!!login)
+			}
+		}
+
+		fetchLoginStatus()
+	}, [])
 
 	return (
 		<>
