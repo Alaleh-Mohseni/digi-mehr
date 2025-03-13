@@ -4,6 +4,8 @@ import { useState } from 'react'
 import ReferalAside from '@/components/ReferalAside'
 import ListNumber from '@/components/ListNumber'
 import Button from '@/components/Button'
+import Card from '@/components/Card'
+import { useParams } from 'next/navigation'
 
 export const mockData = {
 	heading: 'همکاری در فروش به تحصیل کودکان کار افرک',
@@ -25,11 +27,22 @@ const roles = [
 const CreateReferal = () => {
 	const [isChecked, setIsChecked] = useState(false)
 	const [showLinkBox, setShowLinkBox] = useState(false)
+	const [uniqueLink, setUniqueLink] = useState('')
+	const params = useParams()
 
 	const handleCheckboxChange = () => setIsChecked(prev => !prev)
 
 	const handleButtonClick = () => {
-		if (isChecked) setShowLinkBox(true)
+		if (isChecked) {
+			setShowLinkBox(true)
+			const newLink = `https://mehr.digikala.com/project/${params.id}/farnooshjamali`
+			setUniqueLink(newLink)
+		}
+	}
+
+	const handleCopy = () => {
+		navigator.clipboard.writeText(uniqueLink)
+		alert('لینک کپی شد!')
 	}
 
 	return (
@@ -65,12 +78,12 @@ const CreateReferal = () => {
 							</div>
 						</div>
 					) : (
-						<div className='mt-5 flex items-center justify-between rounded-xl border bg-ref-lighter px-8 py-7'>
+						<Card className='flex items-center justify-between bg-ref-lighter'>
 							<Button type='link' href='/history-cooperation'>
-								https://mehr.digikala.com/project/80/farnooshjml{' '}
+								{uniqueLink}
 							</Button>
-							<Button>کپی کردن</Button>
-						</div>
+							<Button onClick={handleCopy}>کپی کردن</Button>
+						</Card>
 					)}
 				</div>
 				<ReferalAside heading={heading} roles={roles} />

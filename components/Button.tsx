@@ -1,4 +1,4 @@
-import { cn } from '@/utils/utils'
+import { cn } from '@/lib/utils/utils'
 import Link from 'next/link'
 import React, { ReactNode } from 'react'
 

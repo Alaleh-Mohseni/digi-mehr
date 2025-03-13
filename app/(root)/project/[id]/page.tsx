@@ -1,5 +1,4 @@
 import UniqueLink from '@/components/UniqueLink'
-import styles from '@/app/ui/project.module.css'
 
 function Project() {
 	return (
