@@ -14,3 +14,14 @@ export const handleLogin = async (valueInput: string) => {
 		})
 	}
 }
+
+export const getLoginCookie = async () => {
+	const cookieStore = cookies()
+	const loginCookie = cookieStore.get('login')
+
+	if (loginCookie) {
+		return loginCookie.value
+	}
+
+	return null
+}

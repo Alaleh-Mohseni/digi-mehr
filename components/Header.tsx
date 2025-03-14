@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Button from './Button'
 import { useState, useEffect } from 'react'
 import Panel from '@/components/Panel'
+import { getLoginCookie } from '@/lib/utils/actions/user.actions'
 
 const Header = () => {
 	const [isLogin, setIsLogin] = useState(false)
@@ -11,10 +12,9 @@ const Header = () => {
 
 	useEffect(() => {
 		const fetchLoginStatus = async () => {
-			const response = await fetch(window.location.href, { method: 'GET' })
-			const login = response.headers.get('login')
-			if (login) {
-				setIsLogin(!!login)
+			const response = await getLoginCookie()
+			if (response) {
+				setIsLogin(!!response)
 			}
 		}
 
