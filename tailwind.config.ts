@@ -30,6 +30,7 @@ const config: Config = {
 				grayDark: '#585a5f',
 				grayMd: '#828488',
 				grayHd: '#515151',
+				greenMd: 'rgba(229, 247, 243, 0.5)',
 			},
 			fontSize: {
 				xs: '12px',

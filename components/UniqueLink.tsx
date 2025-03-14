@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import { useParams } from 'next/navigation'
-import Button from '@/components/Button' // مسیر مناسب را وارد کنید
+import Button from '@/components/Button'
 
 const UniqueLink = () => {
 	const params = useParams()

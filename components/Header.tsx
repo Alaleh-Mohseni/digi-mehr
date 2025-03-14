@@ -5,6 +5,7 @@ import Button from './Button'
 import { useState, useEffect } from 'react'
 import Panel from '@/components/Panel'
 import { getLoginCookie } from '@/lib/utils/actions/user.actions'
+import Link from 'next/link'
 
 const Header = () => {
 	const [isLogin, setIsLogin] = useState(false)
@@ -24,7 +25,9 @@ const Header = () => {
 	return (
 		<>
 			<header className='header'>
-				<Image src='/header-logo.png' alt='logo' width={150} height={0} priority />
+				<Link href='/'>
+					<Image src='/header-logo.png' alt='logo' width={150} height={0} priority />
+				</Link>
 				{isLogin ? (
 					<div className='relative flex items-center gap-md'>
 						<div

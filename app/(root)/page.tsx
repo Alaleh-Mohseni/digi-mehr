@@ -45,7 +45,7 @@ const Home = () => {
 	return (
 		<div className='mb-sm flex w-full flex-col gap-md'>
 			<div className='h-[400px] w-full bg-gray-200' />
-			<div className='h-[292px] w-full bg-gray-200 px-4' />
+			<div className='bg-greenMd h-[292px] w-full px-4' />
 
 			<section className='flex h-[428px] w-full flex-col gap-md px-lg'>
 				<div className='flex flex-row items-center justify-between'>
